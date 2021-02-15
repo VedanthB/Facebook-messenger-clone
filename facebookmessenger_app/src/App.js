@@ -1,13 +1,11 @@
-import React , { useState }from 'react';
+import React , { useState } from 'react';
 import './App.css';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
+import Message from './Message';
 
 function App() {
      const [input, setInput] = useState('');
      const [messages, setMessages] = useState(['hello','hi']);
-   
-     console.log('🧜🏼‍♀️', input);
-     console.log('🧜🏼‍♀️', messages);
 
     const sendMessage = (event) => {
         // this fires when the button is clicked 
@@ -33,7 +31,8 @@ function App() {
 
       {
         messages.map(message => (
-          <p>{message}</p>
+          <Message text={message} />
+          // <p>{message}</p>
         ))
 
       }
