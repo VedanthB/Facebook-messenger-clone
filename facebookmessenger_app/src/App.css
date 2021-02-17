@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  padding: 10px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+main {
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+}
+
+.app__form {
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  z-index: 1; 
+  background: rgb(116,173,163);
+  background: radial-gradient(circle, rgba(116,173,163,1) 12%, rgba(77,150,161,1) 100%);
+  border-radius: 10px;
+  width: 100%;
+  opacity: 95%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__input {
+  flex: 1;
+}
+
+.app__iconButton {
+  flex: 0;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  justify-content: center;
+
+}
+
+.app__welcomeMessage {
+  flex-direction: column;
 }
