@@ -43,7 +43,7 @@ function App() {
     }
 
   return (
-    <main className="app__welcomeMessage ">  
+    <main >  
    
       <img src='https://facebookbrand.com/wp-content/uploads/2020/10/Logo_Messenger_NewBlurple-399x399-1.png?w=100&h=100'></img>
       <h1>Welcome {username}!</h1> 

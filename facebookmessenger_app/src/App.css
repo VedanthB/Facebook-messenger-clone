@@ -16,7 +16,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .app__form {
@@ -61,6 +61,3 @@ main {
 
 }
 
-.app__welcomeMessage {
-  flex-direction: column;
-}
