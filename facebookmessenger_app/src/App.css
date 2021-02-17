@@ -1,22 +1,66 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
   padding: 10px;
+  
 }
 
-body {
-  background-color: rgb(148, 184, 187);
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .app__form {
   padding: 10px;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   z-index: 1; 
-  background: rgb(219,181,198);
-  background: radial-gradient(circle, rgba(219,181,198,1) 0%, rgba(66,124,191,1) 100%);
+  background: rgb(116,173,163);
+  background: radial-gradient(circle, rgba(116,173,163,1) 12%, rgba(77,150,161,1) 100%);
   border-radius: 10px;
   width: 100%;
+  opacity: 95%;
+  color: white;
+}
+
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__input {
+  flex: 1;
+}
+
+.app__iconButton {
+  flex: 0;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  justify-content: center;
+
+}
+
+.app__welcomeMessage {
+  flex-direction: column;
 }
